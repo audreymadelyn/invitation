@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark only">
+<title>BATOOL ZEHRA & ZAIN UL ABIDIN — Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#10201b;--card:#17302a;--ink:#f1ead8;--muted:#b3c1ba;--gold:#d4b062;--green:#d4b062;--line:#2c4a41;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.7}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0}
+section{padding:72px 24px;max-width:880px;margin:0 auto;text-align:center}
+h2{font-size:2.4rem;color:var(--green);margin-bottom:12px}
+.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;color:var(--gold);font-weight:500}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;background:radial-gradient(circle at 50% 30%,var(--card),var(--bg))}
+.hero h1{font-size:clamp(2.6rem,9vw,5rem);color:var(--green);line-height:1.05;margin:18px 0}
+.hero h1 span{color:var(--gold);font-style:italic;font-weight:400}
+.rule{width:80px;height:1px;background:var(--gold);margin:22px auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:28px}
+.scratch{position:relative;width:min(100%,360px);height:140px;margin:28px auto 0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.scratch .under{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--green);background:var(--card)}
+.scratch canvas{position:absolute;inset:0;touch-action:none;cursor:crosshair}
+.cd{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.cd div{min-width:78px;padding:16px 10px}
+.cd b{display:block;font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--green);line-height:1}
+.cd small{letter-spacing:.2em;text-transform:uppercase;font-size:.65rem;color:var(--muted)}
+form{max-width:420px;margin:28px auto 0;text-align:left;display:grid;gap:14px}
+label{font-size:.85rem;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+button{background:var(--green);color:var(--bg);border:0;border-radius:999px;padding:13px 28px;font:inherit;font-weight:500;letter-spacing:.1em;cursor:pointer}
+.thanks{display:none;margin-top:24px;color:var(--green);font-family:'Cormorant Garamond',serif;font-size:1.6rem}
+footer{padding:40px 24px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+.cover{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;color:#f7f3ea;transition:visibility 0s 1.3s}
+.cover .pnl{position:absolute;top:0;bottom:0;width:50.5%;background:linear-gradient(#17463a,#0e2d25);transition:transform 1.2s cubic-bezier(.7,0,.2,1)}
+.cover .pl{left:0}.cover .pr{right:0}
+.cover .mid{position:relative;z-index:1;transition:opacity .5s;padding:24px}
+.cover .mid h2{color:#d4b062;font-size:clamp(2.4rem,9vw,4rem);margin:10px 0}
+.cover.open{visibility:hidden;pointer-events:none}
+.cover.open .pl{transform:translateX(-100%)}.cover.open .pr{transform:translateX(100%)}.cover.open .mid{opacity:0}
+#countdown{max-width:none;background:#17463a;color:#f7f3ea}
+#countdown h2{color:#f1ead8}
+#countdown .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
+#countdown .cd b{color:#d4b062}
+#countdown .cd small{color:#cfd9d4}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+a.btn{display:inline-block;text-decoration:none;background:var(--green);color:var(--bg);border-radius:999px;padding:13px 28px;font-weight:500;letter-spacing:.1em}
+.ghost{background:transparent;color:var(--green);border:1px solid var(--green)}
+.ar{max-width:640px;margin:0 auto 28px;font-family:'Amiri','Noto Naskh Arabic',serif;color:var(--green);line-height:2.1}
+.ar .bism{font-size:1.5rem;color:var(--gold);margin-bottom:10px}
+.ar .verse{font-size:clamp(.9rem,2.6vw,1.1rem)}
+.ar .ref{font-size:.95rem;color:var(--muted);margin-top:6px}
+.closing h2{font-size:clamp(2rem,6vw,3.2rem)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+.hero>*{opacity:0}
+body.opened .hero>*{animation:rise 1.1s both}
+body.opened .hero>*:nth-child(2){animation-delay:.25s}
+body.opened .hero>*:nth-child(3){animation-delay:.5s}
+body.opened .hero>*:nth-child(4){animation-delay:.7s}
+body.opened .hero>*:nth-child(5){animation-delay:.9s}
+body.opened .hero>*:nth-child(6){animation-delay:1.1s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.hero h1 span{background:linear-gradient(90deg,var(--gold),#f0d9a0,var(--gold));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+.card{transition:transform .3s ease}
+.grid .card:hover{transform:translateY(-4px)}
+.petals{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.petals i{position:absolute;top:-40px;width:22px;height:22px;background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='-20%20-20%2040%2040'%3E%3Cg%20fill='%23f4c6cf'%20stroke='%23d98fa0'%20stroke-width='.7'%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%280%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%2872%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28144%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28216%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28288%29'/%3E%3C/g%3E%3Ccircle%20r='4'%20fill='%23d4b062'/%3E%3C/svg%3E") center/contain no-repeat;animation:fall linear infinite}
+.petals i.w{background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='-20%20-20%2040%2040'%3E%3Cg%20fill='%23fff8ea'%20stroke='%23e0c98f'%20stroke-width='.7'%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%280%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%2872%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28144%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28216%29'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5.5'%20ry='9'%20transform='rotate%28288%29'/%3E%3C/g%3E%3Ccircle%20r='4'%20fill='%23d4b062'/%3E%3C/svg%3E")}
+@keyframes fall{to{transform:translate3d(var(--dx),110vh,0) rotate(540deg)}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.petals{display:none}.hero>*{opacity:1!important;animation:none!important}.hero h1 span{animation:none}}
+.bub{position:absolute;bottom:-20px;border-radius:50%;border:1.5px solid rgba(212,176,98,.9);background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.9),rgba(212,176,98,.25) 65%);pointer-events:none;animation:bub 1.8s ease-in forwards}
+@keyframes bub{to{transform:translateY(-190px) scale(1.2);opacity:0}}
+@media (max-width:600px){.hero{justify-content:flex-start;padding-top:40px;padding-bottom:72px;min-height:auto}#invitation{padding-top:72px}.ar{margin-bottom:72px}}
+</style>
+</head>
+<body>
+<div class="cover" id="cover" role="button" tabindex="0" aria-label="Tap to open the invitation"><div class="pnl pl"></div><div class="pnl pr"></div><div class="mid"><div class="eyebrow" style="color:#d4b062">You’re invited</div><h2>Tap to Open</h2><p style="color:#cfd9d4;margin:0">BATOOL ZEHRA & ZAIN UL ABIDIN</p></div></div>
+<section class="hero" id="top">
+    <div class="ar" lang="ar" dir="rtl">
+    <div class="bism">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+    <div class="verse">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</div>
+    <div class="ref">سورة الروم ٣٠:٢١</div>
+  </div>
+  <div class="eyebrow">Together with their families</div>
+  <h1>BATOOL ZEHRA<br><span>&</span><br>ZAIN UL ABIDIN</h1>
+  <div class="rule"></div>
+  <div class="eyebrow">At Victoria Palace Ballroom</div>
+  <p style="max-width:460px;color:var(--muted);margin-top:22px">We can’t wait to celebrate this new chapter with the people we love most.</p>
+</section>
+
+<section id="invitation">
+  <div class="eyebrow">Our Invitation</div>
+  <h2>Join us for our wedding</h2>
+  <p style="max-width:560px;margin:0 auto;color:var(--muted)">With joy in our hearts and blessings from our parents, we invite you to share in the celebration of our marriage. Your presence will make our day complete.</p>
+  <div class="grid" style="max-width:600px;margin:32px auto 0"><div><div class="eyebrow">The bride</div><h3 style="font-size:2rem">BATOOL ZEHRA</h3><p style="color:var(--muted)">Daughter of<br>Mr. & Mrs. Amjad</p></div><div><div class="eyebrow">The groom</div><h3 style="font-size:2rem">ZAIN UL ABIDIN</h3><p style="color:var(--muted)">Son of<br>Mr. & Mrs. Arshad</p></div></div>
+</section>
+
+<section id="reveal">
+  <div class="eyebrow">A little surprise</div>
+  <h2>Scratch to reveal the date</h2>
+  <div class="scratch"><div class="under">December 19, 2026</div><canvas id="sc"></canvas></div>
+</section>
+
+<section id="countdown">
+  <div class="eyebrow">Countdown</div>
+  <h2>Until we say “Qabool hai”</h2>
+  <div class="cd" id="cd"></div>
+</section>
+
+<section id="events">
+  <div class="eyebrow">Wedding Event</div>
+  <h2>The celebration</h2>
+  <div class="grid" style="max-width:360px;margin:28px auto 0">
+    <div class="card"><h3>Nikah</h3><p class="eyebrow">Dec 19 · 9:00 PM</p><p>The ceremony, followed by blessings and a toast.</p></div>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="eyebrow">Venue</div>
+  <h2>Victoria Palace Ballroom</h2>
+  <p style="color:var(--muted)">Victoria Palace Ballroom, Nazimabad 01, Karachi<br>Parking is available on site.</p>
+  <div class="btns"><a class="btn" href="https://www.google.com/maps/dir//Victoria+Palace+Ballroom,+1D+3+1,+1,+Block+3+Nazimabad+01,+Karachi,+74600,+Pakistan/@24.9218524,67.1298786,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3eb33f007637bb89:0x10fc90e2ec963871!2m2!1d67.0311116!2d24.9208787?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D">Open in Maps</a><button class="ghost" id="copy" type="button">Copy address</button></div>
+</section>
+
+<section id="rsvp">
+  <div class="eyebrow">RSVP</div>
+  <h2>Will you be joining us?</h2>
+  <form id="rsvp-form">
+    <div><label for="n">Your name</label><input id="n" required></div>
+    <div><label for="a">Attending</label><select id="a"><option>Joyfully accepts</option><option>Regretfully declines</option></select></div>
+    <div><label for="g">Number of guests</label><select id="g"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+    <button type="submit">Send RSVP</button>
+  </form>
+  <div class="thanks" id="thanks">Thank you — we’ll see you there!</div>
+</section>
+
+<section id="blessings">
+  <div class="eyebrow">Your Blessings</div>
+  <h2>Leave us a wish</h2>
+  <form id="wish-form">
+    <div><label for="w">Your message</label><textarea id="w" rows="3" placeholder="Write a few words…"></textarea></div>
+    <button type="submit">Post wish</button>
+  </form>
+  <div id="wishes" style="max-width:420px;margin:20px auto 0;display:grid;gap:10px"></div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">Hosts & Contact</div>
+  <h2>Questions?</h2>
+  <p style="color:var(--muted)">Reach out to the families any time.</p>
+  <div class="grid" style="max-width:600px;margin:24px auto 0"><div class="card"><h3>Bride’s family</h3><p style="color:var(--muted);margin:6px 0 0">Mr. Amjad<br>0313 3676229</p></div><div class="card"><h3>Groom’s family</h3><p style="color:var(--muted);margin:6px 0 0">Mr. Arshad<br>0313 8310584</p></div></div>
+</section>
+
+<section class="closing"><h2>We can’t wait to celebrate with you.</h2><h2 style="color:var(--gold);font-style:italic;font-weight:400">BATOOL ZEHRA & ZAIN UL ABIDIN</h2><div class="eyebrow" style="margin-top:14px">19 · 12 · 2026 · Victoria Palace Ballroom</div></section>
+<footer>With love, BATOOL ZEHRA & ZAIN UL ABIDIN</footer>
+
+<script>
+(function(){
+  var target=new Date('2026-12-19T21:00:00+05:00').getTime(),cd=document.getElementById('cd');
+  function tick(){
+    var d=Math.max(0,target-Date.now()),p=[['Days',86400000],['Hours',3600000],['Minutes',60000],['Seconds',1000]],h='';
+    p.forEach(function(x){var v=Math.floor(d/x[1]);d-=v*x[1];h+='<div class="card"><b>'+v+'</b><small>'+x[0]+'</small></div>';});
+    cd.innerHTML=h;
+  }
+  tick();setInterval(tick,1000);
+
+  var c=document.getElementById('sc'),ctx=c.getContext('2d'),down=false,done=false,lx=null,ly=null,dist=0;
+  function fill(){
+    c.width=c.offsetWidth;c.height=c.offsetHeight;
+    var g=ctx.createLinearGradient(0,0,c.width,c.height);g.addColorStop(0,'#b08a3e');g.addColorStop(1,'#d9bd7a');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);
+    ctx.fillStyle='#fff';ctx.font='500 16px Jost, sans-serif';ctx.textAlign='center';ctx.fillText('Scratch here',c.width/2,c.height/2+5);
+  }
+    // After the first small scratch, flowers and bubbles bloom outward from that spot and open the rest
+  function bloom(x0,y0){
+    done=true;c.style.pointerEvents='none';
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){c.style.transition='opacity .6s';c.style.opacity='0';return;}
+    var W=c.width,H=c.height,maxR=Math.hypot(Math.max(x0,W-x0),Math.max(y0,H-y0)),items=[],start=null,i;
+    for(i=0;i<48;i++){var x=Math.random()*W,y=Math.random()*H;
+      items.push({x:x,y:y,t0:Math.hypot(x-x0,y-y0)/maxR*1000+Math.random()*150,r:24+Math.random()*28,f:Math.random()<0.55,rot:Math.random()*6.28});}
+    var box=c.parentNode;
+    for(i=0;i<16;i++){var b=document.createElement('i'),sz=8+Math.random()*16;b.className='bub';
+      b.style.cssText='left:'+(Math.random()*95)+'%;width:'+sz+'px;height:'+sz+'px;animation-delay:'+(Math.random()*0.9)+'s';box.appendChild(b);}
+    function frame(ts){
+      if(start===null)start=ts;var t=ts-start;
+      ctx.globalCompositeOperation='destination-out';
+      items.forEach(function(it){
+        var k=(t-it.t0)/700;if(k<=0)return;k=Math.min(k,1);
+        var s=it.r*(0.2+1.7*(1-Math.pow(1-k,3)));
+        ctx.save();ctx.translate(it.x,it.y);ctx.rotate(it.rot+k*0.8);
+        if(it.f){
+          for(var q=0;q<5;q++){ctx.save();ctx.rotate(q*1.2566);ctx.beginPath();ctx.ellipse(0,-s*0.55,s*0.38,s*0.62,0,0,7);ctx.fill();ctx.restore();}
+          ctx.beginPath();ctx.arc(0,0,s*0.3,0,7);ctx.fill();
+        }else{ctx.beginPath();ctx.arc(0,0,s*0.8,0,7);ctx.fill();}
+        ctx.restore();
+      });
+      if(t<2000)requestAnimationFrame(frame);
+      else{ctx.clearRect(0,0,W,H);c.style.display='none';}
+    }
+    requestAnimationFrame(frame);
+  }
+  function scratch(e){
+    if(!down||done)return;
+    var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    ctx.globalCompositeOperation='destination-out';ctx.beginPath();
+    ctx.arc(x,y,20,0,7);ctx.fill();
+    if(lx!==null)dist+=Math.hypot(x-lx,y-ly);
+    lx=x;ly=y;
+    if(dist>60)bloom(x,y);
+  }
+  c.addEventListener('pointerdown',function(e){down=true;lx=null;scratch(e)});
+    window.addEventListener('pointerup',function(){down=false});
+  c.addEventListener('pointermove',scratch);
+  var cv=document.getElementById('cover');
+  document.body.style.overflow='hidden';
+  function openIt(){cv.classList.add('open');document.body.classList.add('opened');document.body.style.overflow='';window.scrollTo(0,0);}
+  var pet=document.createElement('div');pet.className='petals';
+  for(var i=0;i<14;i++){var p=document.createElement('i'),sz=14+Math.random()*18;if(i%3===0)p.className='w';p.style.width=sz+'px';p.style.height=sz+'px';p.style.left=(Math.random()*100)+'%';p.style.setProperty('--dx',(Math.random()*160-80)+'px');p.style.animationDuration=(9+Math.random()*9)+'s';p.style.animationDelay=(-Math.random()*14)+'s';p.style.opacity=0.6+Math.random()*0.35;pet.appendChild(p);}
+  document.body.appendChild(pet);
+  var secs=document.querySelectorAll('section:not(.hero)');
+  secs.forEach(function(s){s.classList.add('rv');});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.15});secs.forEach(function(s){io.observe(s);});}else{secs.forEach(function(s){s.classList.add('in');});}
+  cv.addEventListener('click',openIt);
+  cv.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openIt();}});
+  document.getElementById('copy').addEventListener('click',function(){
+    var b=this;
+    try{navigator.clipboard.writeText('Victoria Palace Ballroom, Nazimabad 01, Karachi').then(function(){b.textContent='Copied!';},function(){b.textContent='Copy failed';});}catch(e){b.textContent='Copy failed';}
+  });
+  fill();
+
+  document.getElementById('rsvp-form').addEventListener('submit',function(e){
+    e.preventDefault();this.style.display='none';document.getElementById('thanks').style.display='block';
+  });
+  document.getElementById('wish-form').addEventListener('submit',function(e){
+    e.preventDefault();var t=document.getElementById('w');
+    if(!t.value.trim())return;
+    var d=document.createElement('div');d.className='card';d.textContent=t.value;
+    document.getElementById('wishes').prepend(d);t.value='';
+  });
+})();
+</script>
+</body>
+</html>
